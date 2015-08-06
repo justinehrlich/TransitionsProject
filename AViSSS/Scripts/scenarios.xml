@@ -2,6 +2,10 @@
 <!--Jeff Wirsing AViSSS XML -->
 
 <scenarios>
-    <name>hallwayScenario</name>
-    <name>testScenario1</name>
+    <name>registrarScenario</name>
+    <name>dormScenario</name>
+    <name>cafeteriaScenario</name>
+    <name>classroomScenario</name>
+    <name>libraryScenario</name>
+    
 </scenarios>

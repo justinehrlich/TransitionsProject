@@ -48,7 +48,7 @@ class ScenarioManager: UIViewController {
         scnView.layer.anchorPoint = CGPointMake(0.5,0.5)
         scnView.center = CGPointMake(512, 384)
         // allows the user to manipulate the camera
-        scnView.allowsCameraControl = true
+        scnView.allowsCameraControl = false
         
         
         //Create GUI and Script managers and link them together

@@ -19,7 +19,7 @@ class StartMenuOverlay: SKScene{
         super.init(size: size)
         self.size = size
         anchorPoint = CGPointMake(0.5, 0.5)
-        var background = SKSpriteNode(imageNamed: "locker_image.jpg")
+        var background = SKSpriteNode(imageNamed: "background.jpeg")
         background.size = size
         background.zPosition = -5
         background.name = "background"
@@ -27,7 +27,7 @@ class StartMenuOverlay: SKScene{
         self.backgroundColor = SKColor.brownColor()
         NSLog("Size \(self.frame.size)")
         
-        var logo = SKSpriteNode(imageNamed: "logo2.png")
+        var logo = SKSpriteNode(imageNamed: "logo.png")
         logo.zPosition = 1
         logo.position = CGPointMake(250, 250)
         logo.name = "logo"
@@ -47,10 +47,19 @@ class StartMenuOverlay: SKScene{
         
         for scenario in scenarioList{
             NSLog("buildingButton")
-            var button = SKShapeNode(path: CGPathCreateWithRoundedRect(CGRectMake(x, y,  193, 135), 8, 8, nil))
+            //var button = SKShapeNode(path: CGPathCreateWithRoundedRect(CGRectMake(x, y,  193, 135), 8, 8, nil))
+            
+            var button = SKShapeNode()
+            button.position=CGPointMake(x, y)
+            var pathPos = CGPathCreateMutable()
+            CGPathAddRoundedRect(pathPos, nil, CGRectMake(0, 0, 193, 135),8,8)
+            button.path = pathPos
+            
+
+            
             button.fillColor = UIColor(white: 1, alpha: 1)
-            //button.fillTexture = SKTexture(imageNamed: "\(scenario).png")
-            button.fillTexture = SKTexture(imageNamed: "hallwayScenario.png")
+            button.fillTexture = SKTexture(imageNamed: "\(scenario).png")
+            //button.fillTexture = SKTexture(imageNamed: "hallwayScenario.png")
             button.strokeColor = SKColor.blackColor()
             button.lineWidth = 2
             button.zPosition = 1
@@ -85,9 +94,11 @@ class StartMenuOverlay: SKScene{
             NSLog("testing button touch \(button.frame, touchLocation)")
             if CGRectContainsPoint(button.frame, touchLocation){
                 NSLog("\(scenarioList[index]) Touched")
-                scenarioManager.refreshRunningScene("\(scenarioList[index])")
+                
                 scenarioManager.scenarioNames = scenarioList
                 scenarioManager.currentScenarioIndex = index
+                scenarioManager.refreshRunningScene("\(scenarioList[index])")
+                //break
             }
             index++
         }

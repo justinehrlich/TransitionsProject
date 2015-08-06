@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Jeff Wirsing AViSSS XML -->
+
+<scenario>
+    <environment>classroomEnvironment</environment>
+    <state id="0">
+        <actions>
+            <target name="camera">
+                <actionSequence desc="Set Height move forward">
+                    <position  type="">
+                        <x>-80</x>
+                        <y>8</y>
+                        <z>20</z>
+                        <duration>0</duration>
+                        <count>1</count>
+                    </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>180</angle>
+                        <duration>0</duration>
+                        <count>1</count>
+                    </rotation>
+                    <position  type="">
+                        <x>0</x>
+                        <y>0</y>
+                        <z>110</z>
+                        <duration>11</duration>
+                        <count>1</count>
+                    </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>2</duration>
+                        <count>1</count>
+                    </rotation>
+                    <position  type="">
+                        <x>-40</x>
+                        <y>7</y>
+                        <z>0</z>
+                        <duration>4</duration>
+                        <count>1</count>
+                    </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>2</duration>
+                        <count>1</count>
+                    </rotation>
+                    <position  type="">
+                        <x>0</x>
+                        <y>0</y>
+                        <z>-17</z>
+                        <duration>1.7</duration>
+                        <count>1</count>
+                    </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>2</duration>
+                        <count>1</count>
+                    </rotation>
+                    <position  type="">
+                        <x>0</x>
+                        <y>-7</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                </actionSequence>
+                <actionSequence desc="bobble head">
+                    <position  type="">
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <position  type="">
+                        <x>0</x>
+                        <y>-1</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <count>4</count>
+                </actionSequence>
+            </target>
+            <target name="boy1">
+                <actionSequence desc="sitIdle1">
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>sitIdle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="boy2">
+                <actionSequence desc="sitIdle1">
+                    <animation>
+                        <file>boy2_Animations</file>
+                        <name>sitIdle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="boy3">
+                <actionSequence desc="sitIdle">
+                    <animation>
+                        <file>boy3_Animations</file>
+                        <name>sitIdle</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="boy5">
+                <actionSequence desc="sitIdle">
+                    <animation>
+                        <file>boy5_Animations</file>
+                        <name>sitIdleLoop</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="woman17">
+                <actionSequence desc="idleLoop">
+                    <animation>
+                        <file>woman17_Animations</file>
+                        <name>idleLoop</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+        </actions>
+        <gui>
+            <ambient_sound></ambient_sound>
+            <situation_sound>1-1a</situation_sound>
+            <situation_text>As you enter the classroom, you realize that you forgot your homework. What should you do?</situation_text>
+            <next_state>1</next_state>
+            <correct_choice>1</correct_choice>
+            <option_type>text</option_type>
+            <description_delay>8</description_delay>
+            <options_delay>8</options_delay>
+            
+            <menu_option id="0">
+                <text>Run back and get the homework, even though you will be late.</text>
+                <text_on_select>No, you should never be late to class as it's not only disrespectful to the professor and your classmates, you may miss something important. And either way, the professor may not allow you to turn in the assignment after class starts.</text_on_select>
+                <sound_on_select>1-1a-1</sound_on_select>
+            </menu_option>
+            <menu_option id="1">
+                <text>After class explain what happened to the professor.</text>
+                <text_on_select>Yes, it's always best to communicate with your professors. Sometimes professors will allow you to turn in assignments late, but either way, she will know why you failed to submit your assignment on time.</text_on_select>
+                <sound_on_select>1-1a-2</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="2">
+                <text>Don't worry about it, you'll be sure to turn in the next homework on time.</text>
+                <text_on_select>No, the professor may still allow you to turn in the assignment late.</text_on_select>
+                <sound_on_select>1-1a-3</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="3">
+                <text>Demand that the professor accept the homework assignment late.</text>
+                <text_on_select>No, you should always be respectful to your professors. You're the one that made the mistake and the professor is in charge of this course, including the late homework policy.</text_on_select>
+                <sound_on_select>1-1a-4</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            
+        </gui>
+    </state>
+    <state id="1">
+        <actions>
+            <target name="camera">
+                <actionSequence desc="turn move forward">
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>10</angle>
+                        <duration>0.5</duration>
+                        <count>1</count>
+                    </rotation>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>-10</angle>
+                        <duration>0.5</duration>
+                        <count>1</count>
+                    </rotation>
+                    <count>5</count>
+                </actionSequence>
+            </target>
+        </actions>
+        <gui>
+            <ambient_sound></ambient_sound>
+            <situation_sound>1-1a</situation_sound>
+            <situation_text>Usually the professor provides handouts that outline her lecture, but today she said the outline is only available online. What should you do?</situation_text>
+            <next_state>2</next_state>
+            <correct_choice>1</correct_choice>
+            <option_type>text</option_type>
+            <description_delay>4</description_delay>
+            <options_delay>4</options_delay>
+            
+            <menu_option id="0">
+                <text>Demand that the professor give you the outline, otherwise she is being unfair.</text>
+                <text_on_select>No, it's the professor's class and she does not need to provide you with outlines or notes. You must learn to deal changes that occur during class.</text_on_select>
+                <sound_on_select>1-1a-1</sound_on_select>
+            </menu_option>
+            <menu_option id="1">
+                <text>Take notes today, but from now on print out the slides before coming to class.</text>
+                <text_on_select>Yes, you still need notes from the lecture to study later. The professor is not obligated to provide you with handouts, so from now on you should print out the outlines before class. </text_on_select>
+                <sound_on_select>1-1a-2</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="2">
+                <text>Leave the class to print out the outline.</text>
+                <text_on_select>No, leaving the class is not only disrespectful to both the professor and your classmates, but you may miss something important. You can take notes without relying on an outline.</text_on_select>
+                <sound_on_select>1-1a-3</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="3">
+                <text>Ignore the problem.</text>
+                <text_on_select>No, you still need notes from the lecture so that you can study the content later.You can take notes without relying on an outline.</text_on_select>
+                <sound_on_select>1-1a-4</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            
+        </gui>
+    </state>
+    <state id="2">
+        <actions>
+            <target name="camera">
+                <actionSequence desc="turn move forward">
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>10</angle>
+                        <duration>0.5</duration>
+                        <count>1</count>
+                    </rotation>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>-10</angle>
+                        <duration>0.5</duration>
+                        <count>1</count>
+                    </rotation>
+                    <count>5</count>
+                </actionSequence>
+            </target>
+        </actions>
+        <gui>
+            <ambient_sound></ambient_sound>
+            <situation_sound>1-1a</situation_sound>
+            <situation_text>You're having trouble understanding some of the content and try to ask questions about it, but you start realizing that the students around you are getting annoyed, and the professor is starting to ignore you.</situation_text>
+            <next_state>3</next_state>
+            <correct_choice>0</correct_choice>
+            <option_type>text</option_type>
+            <description_delay>4</description_delay>
+            <options_delay>4</options_delay>
+            
+            <menu_option id="0">
+                <text>I'll stop asking so many questions and will talk to the professor during her office hours after I've reviewed the materials.</text>
+                <text_on_select>Yes, while not understanding the lecture is frustrating, asking too many questions disrupts the lecture and the ability for others to learn. Note that asking a few questions is certainly acceptable and even encouraged, asking more than ten is too much.</text_on_select>
+                <sound_on_select>1-1a-1</sound_on_select>
+            </menu_option>
+            <menu_option id="1">
+                <text>You have a right to ask questions, so keep doing it until you understand everything completely.</text>
+                <text_on_select>This is not a good idea because asking too many questions disrupts the lecture and the ability for others to learn. </text_on_select>
+                <sound_on_select>1-1a-2</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="2">
+                <text>Stop asking questions completely.</text>
+                <text_on_select>No, you should still ask questions, just in moderation. If you read the material before class you may have a few specific questions, but overall you should have some understanding of the material before coming to class.</text_on_select>
+                <sound_on_select>1-1a-3</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="3">
+                <text>Leave the classroom, nobody wants you here.</text>
+                <text_on_select>No, the professor and everyone else want you to participate in the course. You must find a way to participate without distracting others from learning.</text_on_select>
+                <sound_on_select>1-1a-4</sound_on_select>
+                <actions></actions>
+            </menu_option>
+        </gui>
+    </state>
+    <state id="3">
+        <actions>
+            <target name="camera">
+                <actionSequence desc="turn move forward">
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>10</angle>
+                        <duration>0.5</duration>
+                        <count>1</count>
+                    </rotation>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>-10</angle>
+                        <duration>0.5</duration>
+                        <count>1</count>
+                    </rotation>
+                    <count>5</count>
+                </actionSequence>
+            </target>
+        </actions>
+        <gui>
+            <ambient_sound></ambient_sound>
+            <situation_sound>1-1a</situation_sound>
+            <situation_text>The professor has just told the details about our final project. One of the requirements is to present the project to the class, but you are terrified at public speaking. What should you do?</situation_text>
+            <next_state>0</next_state>
+            <correct_choice>3</correct_choice>
+            <option_type>text</option_type>
+            <description_delay>4</description_delay>
+            <options_delay>4</options_delay>
+            
+            <menu_option id="0">
+                <text>I'll do the project, but won't present it to the class.</text>
+                <text_on_select>No, for you are required to give a presentation and your grade depends on it. While public speaking may be scary, it's an important skill to have and most careers require it. Giving presentations in class is a very good way of practicing public speaking. The more you practice, the less scary it becomes.</text_on_select>
+                <sound_on_select>1-1a-1</sound_on_select>
+            </menu_option>
+            <menu_option id="1">
+                <text>I will try and drop the course.</text>
+                <text_on_select>No, just because you are scared is not a good reason for dropping a course. While public speaking may be scary, it's an important skill to have and most careers require it. Giving presentations in class is a very good way of practicing public speaking. The more you practice, the less scary it becomes.</text_on_select>
+                <sound_on_select>1-1a-2</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="2">
+                <text>I'll just plan on reading a few lines and ending it as quick as possible.</text>
+                <text_on_select>No, you should always do your best. Reading a few lines will likely not fulfill the requirements, and besides you will miss out on an opportunity to practice your public speaking skills. While public speaking may be scary, it's an important skill to have and most careers require it.</text_on_select>
+                <sound_on_select>1-1a-3</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="3">
+                <text>I'll practice the presentation at home, but if I'm still worried about it I'll talk with the professor.</text>
+                <text_on_select>This is probably the best solution, as it will prepare you to give your final project presentation. If after you practice you still feel overwelmed, talk to your professor. She might be able to give you tips or even offer an alternative assignment if a disability prevents you from publicly speaking.</text_on_select>
+                <sound_on_select>1-1a-4</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            
+        </gui>
+    </state>
+</scenario>
