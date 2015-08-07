@@ -271,7 +271,7 @@
             
             <menu_option id="0">
                 <text>I'll stop asking so many questions and will talk to the professor during her office hours after I've reviewed the materials.</text>
-                <text_on_select>Yes, while not understanding the lecture is frustrating, asking too many questions disrupts the lecture and the ability for others to learn. Note that asking a few questions is certainly acceptable and even encouraged, asking more than ten is too much.</text_on_select>
+                <text_on_select>Yes, while not understanding the lecture is frustrating, asking too many questions disrupts the lecture and the ability for others to learn. Note that asking a few questions is certainly acceptable and even encouraged, asking more than ten is too much. A good strategy is to write down your questions. You can always ask your professor these questions during her office hours. </text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">

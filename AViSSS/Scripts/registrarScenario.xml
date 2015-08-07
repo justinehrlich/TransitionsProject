@@ -101,33 +101,33 @@
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>As you enter the registrar's office to enroll for this semester's courses, you notice that the line is long and it's taking forever. What should you do?</situation_text>
+            <situation_text>As you enter the registrar's office to enroll for this semester's courses, you notice that the line is long and is taking forever. What should you do?</situation_text>
             <next_state>1</next_state>
-            <correct_choice>2</correct_choice>
+            <correct_choice>0</correct_choice>
             <option_type>text</option_type>
             <description_delay>4</description_delay>
             <options_delay>4</options_delay>
             
             <menu_option id="0">
-                <text>Talk to a staff member about having him moved.</text>
-                <text_on_select>No, even though you usually sit here, it's not your seat. The other person was there first so it's his seat. Your usual seat will be occupied many times, so you must be flexibile to choose another seat.</text_on_select>
+                <text>Wait in line.</text>
+                <text_on_select>Yes, it's important to enroll in your courses as soon as possible because your desired courses could become full.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Tell him to leave, it's your seat.</text>
-                <text_on_select>No, even though you usually sit here, it's not your seat. The other person was there first so it's his seat. Your usual seat will be occupied many times, so you must be flexibile to choose another seat. </text_on_select>
+                <text>Go back to your dorm and try again tomorrow.</text>
+                <text_on_select>No, this is not wise since classes tend to fill up fast and so you should enroll now. </text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Find a different seat once you have gotten your food.</text>
-                <text_on_select>Good job! The other person was there first so it's his seat. Your usual seat will be occupied many times during the semester, so you must be flexibile to choose another seat. </text_on_select>
+                <text>Cut in front of someone - you're in a hurry.</text>
+                <text_on_select>No! You must wait your turn.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Stand next to him until he leaves.</text>
-                <text_on_select>No, this would make him feel uncormfortable, and besides you need to eat!</text_on_select>
+                <text>Leave and talk to your advisor, maybe he can enroll you himself.</text>
+                <text_on_select>No, this is your responsibility and you must wait in line.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
@@ -262,25 +262,25 @@
             <options_delay>1</options_delay>
             
             <menu_option id="0">
-                <text>I'll ask the person to hurry up.</text>
-                <text_on_select>No, this is rude and will cause a conflict.</text_on_select>
+                <text>Leave and come back tomorrow.</text>
+                <text_on_select>No, this is not wise since classes tend to fill up fast and so you should enroll now.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Leave to go get snacks at the vending machine.</text>
-                <text_on_select>This is not a good idea as vending machine food is typically not very healthy.</text_on_select>
+                <text>Tell everyone to be quiet.</text>
+                <text_on_select>No, this is rude and it's not your place to tell people to be quiet.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Cut in front of the person asking all the questions.</text>
-                <text_on_select>No, this is rude and will cause a conflict.</text_on_select>
+                <text>Leave and ask your advisor to wait for you.</text>
+                <text_on_select>No, this is your responsibility and you should try to find a better solution.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Ignore the problem and wait patiently.</text>
-                <text_on_select>This is probably the best solution, you need to learn to have patience while waiting in lines.</text_on_select>
+                <text>Try to be patient and wait in the line.</text>
+                <text_on_select>This is probably the best solution. If the noise is simply too much, you can always go out in the hallway for a break. Another solution is to use ear buds or ear plugs to reduce the noise, especially while you're waiting.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
@@ -691,31 +691,31 @@
             <situation_sound>1-1a</situation_sound>
             <situation_text>It's finally your turn. You give the assistant all of the forms that you have, but she says you're missing a form. What should you do?</situation_text>
             <next_state>3</next_state>
-            <correct_choice>1</correct_choice>
+            <correct_choice>3</correct_choice>
             <option_type>text</option_type>
             <description_delay>8</description_delay>
             <options_delay>8</options_delay>
             
             <menu_option id="0">
-                <text>I'll walk around the person and cut him.</text>
-                <text_on_select>No, this will only cause a conflict, which is not what you need.</text_on_select>
+                <text>Tell her she's wrong.</text>
+                <text_on_select>No, this will only cause a conflict, which is not what you need. If you feel like expressing your opinion, write down your thoughts in a journal. After you enroll, you can talk to your advisor about making sure you have the correct forms next time.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Ignore the person.</text>
-                <text_on_select>Yes, you should probably let this go, besides he might of cut not knowing you were in line,  or it's possible that the person in front of him saved a spot.</text_on_select>
+                <text>Leave.</text>
+                <text_on_select>No, you should see if you can continue enrolling even though you're missing a form.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Scream and yell.</text>
-                <text_on_select>No, this will only cause a conflict and you will embarras yourself.</text_on_select>
+                <text>Ask the student behind you for their form.</text>
+                <text_on_select>No, you need to find a solution yourself.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Tell the person to get behind you.</text>
-                <text_on_select>While this might be acceptable, it might cause a conflict. This cost you so little time it's probably not worth worrying about.</text_on_select>
+                <text>Ask the assistant if she has an extra form.</text>
+                <text_on_select>Yes, it's possible that the form can be filled out now.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
@@ -752,31 +752,30 @@
             <situation_sound>1-1a</situation_sound>
             <situation_text>The assistant enters everything in the computer but then notices that one of the classes you selected is already full. What should you do?</situation_text>
             <next_state>4</next_state>
-            <correct_choice>0</correct_choice>
+            <correct_choice>1</correct_choice>
             <option_type>text</option_type>
             <description_delay>1</description_delay>
             <options_delay>1</options_delay>
-            
             <menu_option id="0">
-                <text>Ask the server what to do.</text>
-                <text_on_select>Yes, she might have a solution and either way it doesn't hurt to ask.</text_on_select>
+                <text>Tell her she's wrong.</text>
+                <text_on_select>No, the assistant is using a computer that keeps track of the enrollment. If you feel like expressing your opinion, write down your thoughts in a journal. After you enroll, you can talk to your advisor about making sure you have the correct forms next time.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Leave to go back to the dorm to find it.</text>
-                <text_on_select>No, you don't have time to go all the way back to the dorm before your next class.</text_on_select>
+                <text>Ask the assistant what you should do.</text>
+                <text_on_select>Yes, the assistant will be able to help you enroll in alternative classes. Typically your advisor will select alternative classes in case a course is full, so check your course plan.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Take the food and just hope the cashier will know what to do.</text>
-                <text_on_select>No, you should make sure you have a solution before taking the food. Once you take the food, it can't be given to anybody else, so if the cashier doesn't have a solution then the food will be thrown out.</text_on_select>
+                <text>Demand that she still let you in.</text>
+                <text_on_select>No, it's not up to the assistant, this is a University policy. Besides, this behavior is rude and will not result in anything positive.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Skip lunch today.</text>
-                <text_on_select>Only do this if you've checked that there is nothing else you can do. You should eat all three meals everyday to stay healthy and smart.</text_on_select>
+                <text>Leave.</text>
+                <text_on_select>No, you should see if you can continue enrolling even though you're missing a form. </text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
@@ -812,32 +811,32 @@
             <situation_sound>1-1a</situation_sound>
             <situation_text>You are really confused by the schedule. What should you do?</situation_text>
             <next_state>0</next_state>
-            <correct_choice>3</correct_choice>
+            <correct_choice>0</correct_choice>
             <option_type>text</option_type>
             <description_delay>2</description_delay>
             <options_delay>2</options_delay>
             
             <menu_option id="0">
-                <text>Skip lunch and go to class.</text>
-                <text_on_select>No, this is a bad idea. Not only will you receive a lower grade, but you will not be learning what was intended.</text_on_select>
+                <text>Ask the assistant for clarification.</text>
+                <text_on_select>No, this will only cause a conflict, which is not what you need. If you feel like expressing your opinion, write down your thoughts in a journal. After you enroll, you can talk to your advisor about making sure you have the correct forms next time.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Ask another person in line for some money.</text>
-                <text_on_select>No, you shouldn't hassle people for money unless you are desperate.</text_on_select>
-                <sound_on_select>1-1a-4</sound_on_select>
-                <actions></actions>
-            </menu_option>
-            <menu_option id="2">
-                <text>Argue with the server - this is not fair.</text>
-                <text_on_select>No, this is a policy of the cafeteria and is not the server's choice. It's not her or the cafeteria's fault that you forgot your ID.</text_on_select>
+                <text>Leave.</text>
+                <text_on_select>No, you need to be sure that you understand your schedule to be sure it's correct and so you'll know where to show up on the first day of classes.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
-            <menu_option id="3">
-                <text>Stop by the vending machine on the way to class.</text>
-                <text_on_select>Yes, but make sure you find the most healthy item. You need nutrients in order to be alert for class.</text_on_select>
+            <menu_option id="2">
+                <text>Ask the student behind you help.</text>
+                <text_on_select>No, you need to find a solution yourself.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="3">
+                <text>Ask your advisor for help.</text>
+                <text_on_select>While this may be a good solution, you should be sure that the schedule is correct before finishing enrollment.</text_on_select>
+                <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
             
