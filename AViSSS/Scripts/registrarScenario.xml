@@ -18,7 +18,7 @@
                     <position  type="">
                         <x>0</x>
                         <y>8</y>
-                        <z>60</z>
+                        <z>65</z>
                         <duration>0</duration>
                         <count>1</count>
                     </position>
@@ -120,7 +120,7 @@
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Cut in front of someone - you're in a hurry.</text>
+                <text>Cut in front of someone since you're in a hurry.</text>
                 <text_on_select>No! You must wait your turn.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
@@ -418,10 +418,10 @@
                         <count>1000</count>
                     </animation>
                     <position  type="">
-                        <x>15</x>
+                        <x>25</x>
                         <y>0</y>
                         <z>0</z>
-                        <duration>1.5</duration>
+                        <duration>2.5</duration>
                         <count>1</count>
                     </position>
                     <animation>
@@ -479,10 +479,10 @@
                         <count>1000</count>
                     </animation>
                     <position  type="">
-                        <x>15</x>
+                        <x>25</x>
                         <y>0</y>
                         <z>0</z>
-                        <duration>1.5</duration>
+                        <duration>2.5</duration>
                         <count>1</count>
                     </position>
                     <animation>
@@ -522,7 +522,7 @@
                         <count>1000</count>
                     </animation>
                     <position  type="">
-                        <x>20</x>
+                        <x>30</x>
                         <y>0</y>
                         <z>0</z>
                         <duration>2</duration>
@@ -653,7 +653,7 @@
                         <count>1000</count>
                     </animation>
                     <position  type="">
-                        <x>20</x>
+                        <x>30</x>
                         <y>0</y>
                         <z>0</z>
                         <duration>1</duration>
@@ -762,7 +762,7 @@
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Ask the assistant what you should do.</text>
+                <text>Choose an alternative course.</text>
                 <text_on_select>Yes, the assistant will be able to help you enroll in alternative classes. Typically your advisor will select alternative classes in case a course is full, so check your course plan.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
@@ -818,7 +818,7 @@
             
             <menu_option id="0">
                 <text>Ask the assistant for clarification.</text>
-                <text_on_select>No, this will only cause a conflict, which is not what you need. If you feel like expressing your opinion, write down your thoughts in a journal. After you enroll, you can talk to your advisor about making sure you have the correct forms next time.</text_on_select>
+                <text_on_select>Yes, it's important that you understand your schedule before you leave so that you can make sure that there are no mistakes. While you might be able to fix a mistake before the semester starts, your intended courses could be filled up.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">

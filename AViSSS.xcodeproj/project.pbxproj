@@ -94,6 +94,12 @@
 		1FCF20E1197EB64800A2AB99 /* ScriptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCF20E0197EB64800A2AB99 /* ScriptManager.swift */; };
 		1FCF20E5197EB8C900A2AB99 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCF20E4197EB8C900A2AB99 /* StartScene.swift */; };
 		1FCF20E7197EC2D300A2AB99 /* GUIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCF20E6197EC2D300A2AB99 /* GUIManager.swift */; };
+		C81022941B74FDBF00F0BF81 /* park25_BK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C810228E1B74FDBF00F0BF81 /* park25_BK.jpg */; };
+		C81022951B74FDBF00F0BF81 /* park25_DN.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C810228F1B74FDBF00F0BF81 /* park25_DN.jpg */; };
+		C81022961B74FDBF00F0BF81 /* park25_FR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C81022901B74FDBF00F0BF81 /* park25_FR.jpg */; };
+		C81022971B74FDBF00F0BF81 /* park25_LF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C81022911B74FDBF00F0BF81 /* park25_LF.jpg */; };
+		C81022981B74FDBF00F0BF81 /* park25_RT.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C81022921B74FDBF00F0BF81 /* park25_RT.jpg */; };
+		C81022991B74FDBF00F0BF81 /* park25_UP.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C81022931B74FDBF00F0BF81 /* park25_UP.jpg */; };
 		C871536C1B739FEE007AD5C0 /* cafeteriaEnvironment.xml in Resources */ = {isa = PBXBuildFile; fileRef = C87153621B739FEE007AD5C0 /* cafeteriaEnvironment.xml */; };
 		C871536D1B739FEE007AD5C0 /* cafeteriaScenario.xml in Resources */ = {isa = PBXBuildFile; fileRef = C87153631B739FEE007AD5C0 /* cafeteriaScenario.xml */; };
 		C871536E1B739FEE007AD5C0 /* classroomEnvironment.xml in Resources */ = {isa = PBXBuildFile; fileRef = C87153641B739FEE007AD5C0 /* classroomEnvironment.xml */; };
@@ -276,6 +282,12 @@
 		1FCF20E0197EB64800A2AB99 /* ScriptManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptManager.swift; sourceTree = "<group>"; };
 		1FCF20E4197EB8C900A2AB99 /* StartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		1FCF20E6197EC2D300A2AB99 /* GUIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GUIManager.swift; sourceTree = "<group>"; };
+		C810228E1B74FDBF00F0BF81 /* park25_BK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = park25_BK.jpg; sourceTree = "<group>"; };
+		C810228F1B74FDBF00F0BF81 /* park25_DN.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = park25_DN.jpg; sourceTree = "<group>"; };
+		C81022901B74FDBF00F0BF81 /* park25_FR.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = park25_FR.jpg; sourceTree = "<group>"; };
+		C81022911B74FDBF00F0BF81 /* park25_LF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = park25_LF.jpg; sourceTree = "<group>"; };
+		C81022921B74FDBF00F0BF81 /* park25_RT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = park25_RT.jpg; sourceTree = "<group>"; };
+		C81022931B74FDBF00F0BF81 /* park25_UP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = park25_UP.jpg; sourceTree = "<group>"; };
 		C87153621B739FEE007AD5C0 /* cafeteriaEnvironment.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cafeteriaEnvironment.xml; sourceTree = "<group>"; };
 		C87153631B739FEE007AD5C0 /* cafeteriaScenario.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cafeteriaScenario.xml; sourceTree = "<group>"; };
 		C87153641B739FEE007AD5C0 /* classroomEnvironment.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = classroomEnvironment.xml; sourceTree = "<group>"; };
@@ -429,6 +441,12 @@
 		1F5C3C6C19E8D670009ED80A /* Skyboxes */ = {
 			isa = PBXGroup;
 			children = (
+				C810228E1B74FDBF00F0BF81 /* park25_BK.jpg */,
+				C810228F1B74FDBF00F0BF81 /* park25_DN.jpg */,
+				C81022901B74FDBF00F0BF81 /* park25_FR.jpg */,
+				C81022911B74FDBF00F0BF81 /* park25_LF.jpg */,
+				C81022921B74FDBF00F0BF81 /* park25_RT.jpg */,
+				C81022931B74FDBF00F0BF81 /* park25_UP.jpg */,
 			);
 			name = Skyboxes;
 			sourceTree = "<group>";
@@ -744,6 +762,7 @@
 				C87153721B739FEE007AD5C0 /* libraryEnvironment.xml in Resources */,
 				C87153741B739FEE007AD5C0 /* registrarEnvironment.xml in Resources */,
 				1FAFAB711B2E29B30067503D /* CharacterAnimationList.docx in Resources */,
+				C81022991B74FDBF00F0BF81 /* park25_UP.jpg in Resources */,
 				1F3B7C931B03963F00E44969 /* woman17_Animations.dae in Resources */,
 				C87153D01B73A2D3007AD5C0 /* dormWall.png in Resources */,
 				1F3B7C8A1B03963F00E44969 /* boy1_Animations.dae in Resources */,
@@ -772,6 +791,7 @@
 				1F78E52119E0D50C007CE18A /* CWom0017.tif in Resources */,
 				1FAFAB8A1B2E2A1E0067503D /* CH06_Model.dae in Resources */,
 				1FAFAB851B2E2A1E0067503D /* CH01_Model.dae in Resources */,
+				C81022981B74FDBF00F0BF81 /* park25_RT.jpg in Resources */,
 				1F3B7C9E1B03966600E44969 /* girl3_Model.dae in Resources */,
 				1F3B7CA41B03966600E44969 /* boy4_Model.dae in Resources */,
 				C87153C31B73A2D3007AD5C0 /* casserole.jpg in Resources */,
@@ -828,6 +848,7 @@
 				1F78E51D19E0D50C007CE18A /* CGirl0001.tif in Resources */,
 				C87153DE1B73A2D3007AD5C0 /* light.png in Resources */,
 				C8D14B721B73F4E600E05B92 /* libraryScenario.png in Resources */,
+				C81022961B74FDBF00F0BF81 /* park25_FR.jpg in Resources */,
 				C87153D51B73A2D3007AD5C0 /* graduation.jpg in Resources */,
 				1FC819431B3C5B98005538BC /* schoolFront.dae in Resources */,
 				C87153B51B73A2D3007AD5C0 /* blackboard.jpg in Resources */,
@@ -839,6 +860,7 @@
 				1F470F1C1B15980C00F3D3E9 /* CH01_06_gym.jpg in Resources */,
 				1F470F171B15980C00F3D3E9 /* CH01_03.jpg in Resources */,
 				1F78E51E19E0D50C007CE18A /* CGirl0002.tif in Resources */,
+				C81022971B74FDBF00F0BF81 /* park25_LF.jpg in Resources */,
 				C87153EC1B73A2D3007AD5C0 /* wood.jpg in Resources */,
 				C87153E91B73A2D3007AD5C0 /* universityPosterSki.jpg in Resources */,
 				C87153D71B73A2D3007AD5C0 /* granite.jpg in Resources */,
@@ -863,8 +885,10 @@
 				1F470F1A1B15980C00F3D3E9 /* CH01_05_gym.jpg in Resources */,
 				1F470F1B1B15980C00F3D3E9 /* CH01_05.jpg in Resources */,
 				1F470F181B15980C00F3D3E9 /* CH01_04_gym.jpg in Resources */,
+				C81022941B74FDBF00F0BF81 /* park25_BK.jpg in Resources */,
 				1FAFABC41B2E2AB90067503D /* CH01_Animations.dae in Resources */,
 				C8D14B711B73F4E600E05B92 /* dormScenario.png in Resources */,
+				C81022951B74FDBF00F0BF81 /* park25_DN.jpg in Resources */,
 				1F470F191B15980C00F3D3E9 /* CH01_04.jpg in Resources */,
 				1F470F1F1B15980C00F3D3E9 /* CH01_08_gym.jpg in Resources */,
 				1F3B7C8F1B03963F00E44969 /* girl1_Animations.dae in Resources */,

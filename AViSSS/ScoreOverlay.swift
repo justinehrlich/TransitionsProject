@@ -21,7 +21,7 @@ class ScoreOverlay: SKScene{
         super.init(size: size)
         self.size = size
         anchorPoint = CGPointMake(0.5, 0.5)
-        var background = SKSpriteNode(imageNamed: "chalkboard.tif")
+        var background = SKSpriteNode(imageNamed: "blackboard.jpg")
         background.size = size
         background.zPosition = -5
         background.name = "background"

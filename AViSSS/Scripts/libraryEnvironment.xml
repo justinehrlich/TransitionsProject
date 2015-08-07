@@ -71,9 +71,9 @@
             <z>8</z>
         </scale>
     </node>
-    <node name="boy1" type="dae">
-        <file>boy1_Model</file>
-        <objectName>CBoy0001</objectName>
+    <node name="boy3" type="dae">
+        <file>boy3_Model</file>
+        <objectName>CBoy0003</objectName>
         <position>
             <x>-70</x>
             <y>00</y>
@@ -91,9 +91,9 @@
         </scale>
     </node>
     
-    <node name="boy3" type="dae">
-        <file>boy3_Model</file>
-        <objectName>CBoy0003</objectName>
+    <node name="boy1" type="dae">
+        <file>boy1_Model</file>
+        <objectName>CBoy0001</objectName>
         <position>
             <x>-70</x>
             <y>00</y>
@@ -105,9 +105,9 @@
             <z>0</z>
         </rotation>
         <scale>
-            <x>13</x>
-            <y>13</y>
-            <z>13</z>
+            <x>10</x>
+            <y>10</y>
+            <z>10</z>
         </scale>
     </node>
     

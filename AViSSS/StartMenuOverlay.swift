@@ -42,8 +42,8 @@ class StartMenuOverlay: SKScene{
         //get list of scenarios
         scenarioList = scenarioManager.scriptManager.getScenarioList()
         NSLog("ScenarioList- \(scenarioList)")
-        var x:CGFloat = -500
-        var y:CGFloat = 200
+        var x:CGFloat = -490
+        var y:CGFloat = 220
         
         for scenario in scenarioList{
             NSLog("buildingButton")
@@ -52,7 +52,7 @@ class StartMenuOverlay: SKScene{
             var button = SKShapeNode()
             button.position=CGPointMake(x, y)
             var pathPos = CGPathCreateMutable()
-            CGPathAddRoundedRect(pathPos, nil, CGRectMake(0, 0, 193, 135),8,8)
+            CGPathAddRoundedRect(pathPos, nil, CGRectMake(0, 0, 193, 125),8,8)
             button.path = pathPos
             
 
@@ -70,9 +70,9 @@ class StartMenuOverlay: SKScene{
             buttons.append(button)
             
             //Move coordinates down the column, and over a row if needed
-            y -= 145
-            if (y < -300) {
-                y = 200
+            y -= 135
+            if (y < -350) {
+                y = 220
                 x += 210
             }
             

@@ -109,8 +109,8 @@
             <next_state>1</next_state>
             <correct_choice>3</correct_choice>
             <option_type>text</option_type>
-            <description_delay>8</description_delay>
-            <options_delay>8</options_delay>
+            <description_delay>6</description_delay>
+            <options_delay>6</options_delay>
             
             <menu_option id="0">
                 <text>Talk to the librarian about having the person moved.</text>
@@ -130,7 +130,7 @@
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Find a different seat."</text>
+                <text>Find a different seat.</text>
                 <text_on_select>Good job! The other person was there first so it's his seat. Your favorite seat will be occupied many times during the semester, so you must be flexibile to choose another seat. </text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
@@ -316,8 +316,8 @@
             <next_state>3</next_state>
             <correct_choice>3</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>6</description_delay>
+            <options_delay>6</options_delay>
             
             <menu_option id="0">
                 <text>I'll walk around the library until I can decide what to do.</text>
@@ -413,8 +413,8 @@
             <next_state>4</next_state>
             <correct_choice>3</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>6</description_delay>
+            <options_delay>6</options_delay>
             
             <menu_option id="0">
                 <text>Make up the report without finding any information on the topic.</text>
@@ -533,8 +533,8 @@
             <next_state>5</next_state>
             <correct_choice>1</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>6</description_delay>
+            <options_delay>6</options_delay>
             
             <menu_option id="0">
                 <text>Skip this part of the assignment.</text>
@@ -625,7 +625,7 @@
             </menu_option>
             <menu_option id="2">
                 <text>Argue with the librarian.</text>
-                <text_on_select>No, this is not a good idea. This policy is of the University and it's important that it be followed.</text_on_select>
+                <text_on_select>No, this is not a good idea. This policy is of the University and it's important that it be followed. If you especially feel like arguing, it might be a good idea to express your views in a journal to give you an outlet.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>

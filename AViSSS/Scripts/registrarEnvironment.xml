@@ -57,7 +57,7 @@
         <position>
             <x>55</x>
             <y>0</y>
-            <z>81</z>
+            <z>85</z>
         </position>
         <rotation>
             <x>-90</x>
@@ -66,8 +66,8 @@
         </rotation>
         <scale>
             <x>10</x>
-            <y>10</y>
-            <z>13</z>
+            <y>13</y>
+            <z>10</z>
         </scale>
     </node>
     
@@ -77,7 +77,7 @@
         <position>
             <x>65</x>
             <y>0</y>
-            <z>81</z>
+            <z>86</z>
         </position>
         <rotation>
             <x>-90</x>
@@ -86,8 +86,8 @@
         </rotation>
         <scale>
             <x>10</x>
-            <y>10</y>
-            <z>13</z>
+            <y>13</y>
+            <z>10</z>
         </scale>
     </node>
     <node name="girl2" type="dae">
@@ -96,7 +96,7 @@
         <position>
             <x>75</x>
             <y>0</y>
-            <z>80</z>
+            <z>84</z>
         </position>
         <rotation>
             <x>-90</x>
@@ -115,7 +115,7 @@
         <position>
             <x>85</x>
             <y>0</y>
-            <z>82</z>
+            <z>87</z>
         </position>
         <rotation>
             <x>-90</x>
