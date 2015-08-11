@@ -1,9 +1,7 @@
 //
 //  StartMenuOverlay.swift
 //  AViSSS
-//
-//  Created by Jeff Wirsing on 5/20/15.
-//  Copyright (c) 2015 wirsing.app. All rights reserved.
+//  Copyright (c) 2015 AViSSS. All rights reserved.
 //
 
 import SpriteKit
@@ -29,9 +27,15 @@ class StartMenuOverlay: SKScene{
         
         var logo = SKSpriteNode(imageNamed: "logo.png")
         logo.zPosition = 1
-        logo.position = CGPointMake(250, 250)
+        logo.position = CGPointMake(225, 250)
         logo.name = "logo"
         self.addChild(logo)
+        
+        var intro = SKSpriteNode(imageNamed: "intro.png")
+        intro.zPosition = 1
+        intro.position = CGPointMake(225, -250)
+        intro.name = "intro"
+        self.addChild(intro)
         
         
         setupButtons()
@@ -108,5 +112,6 @@ class StartMenuOverlay: SKScene{
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
     
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Jeff Wirsing AViSSS XML -->
+<!-- AViSSS XML -->
+<!--Copyright (c) 2015 AViSSS. All rights reserved. -->
 
 <scenario>
     <environment>registrarEnvironment</environment>
@@ -418,10 +419,10 @@
                         <count>1000</count>
                     </animation>
                     <position  type="">
-                        <x>25</x>
+                        <x>35</x>
                         <y>0</y>
                         <z>0</z>
-                        <duration>2.5</duration>
+                        <duration>3.5</duration>
                         <count>1</count>
                     </position>
                     <animation>
@@ -479,10 +480,10 @@
                         <count>1000</count>
                     </animation>
                     <position  type="">
-                        <x>25</x>
+                        <x>35</x>
                         <y>0</y>
                         <z>0</z>
-                        <duration>2.5</duration>
+                        <duration>3.5</duration>
                         <count>1</count>
                     </position>
                     <animation>
@@ -522,10 +523,10 @@
                         <count>1000</count>
                     </animation>
                     <position  type="">
-                        <x>30</x>
+                        <x>40</x>
                         <y>0</y>
                         <z>0</z>
-                        <duration>2</duration>
+                        <duration>4</duration>
                         <count>1</count>
                     </position>
                     <animation>
@@ -653,10 +654,10 @@
                         <count>1000</count>
                     </animation>
                     <position  type="">
-                        <x>30</x>
+                        <x>40</x>
                         <y>0</y>
                         <z>0</z>
-                        <duration>1</duration>
+                        <duration>4</duration>
                         <count>1</count>
                     </position>
                     
@@ -828,7 +829,7 @@
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Ask the student behind you help.</text>
+                <text>Ask the student behind you for help.</text>
                 <text_on_select>No, you need to find a solution yourself.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>

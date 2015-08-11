@@ -2,9 +2,6 @@
 //  AppDelegate.swift
 //  AViSSS
 //
-//  Created by Jeff Wirsing on 7/16/14.
-//  Copyright (c) 2014 wirsing.app. All rights reserved.
-//
 
 import UIKit
 

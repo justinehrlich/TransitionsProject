@@ -1,10 +1,9 @@
 //
 //  GUIManager.swift
 //  AViSSS
+//  Copyright (c) 2015 AViSSS. All rights reserved.
 //
-//  Created by Jeff Wirsing on 7/22/14.
-//  Copyright (c) 2014 wirsing.app. All rights reserved.
-//  iPad2 size - 768x1024
+
 
 import Foundation
 import SceneKit

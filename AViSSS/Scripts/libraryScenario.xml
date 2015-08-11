@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Jeff Wirsing AViSSS XML -->
+<!-- AViSSS XML -->
+<!--Copyright (c) 2015 AViSSS. All rights reserved. -->
 
 <scenario>
     <environment>libraryEnvironment</environment>
@@ -609,8 +610,8 @@
             <next_state>0</next_state>
             <correct_choice>3</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>6</description_delay>
+            <options_delay>6</options_delay>
             
             <menu_option id="0">
                 <text>Make up the report without finding any information on the topic.</text>
@@ -630,7 +631,7 @@
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Go home and get your ID.</text>
+                <text>Go to your dorm and get your ID.</text>
                 <text_on_select>Yes, this is a good solution. While it's annoying that the librarian won't let you see the book without an ID, they must keep track of where the book is located so that way the rest of the class has time to read it.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>

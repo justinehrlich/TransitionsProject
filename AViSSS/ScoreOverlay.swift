@@ -1,10 +1,9 @@
 //
 //  ScoreOverlay.swift
 //  AViSSS
+//  Copyright (c) 2015 AViSSS. All rights reserved.
 //
-//  Created by Jeff Wirsing on 6/23/15.
-//  Copyright (c) 2015 wirsing.app. All rights reserved.
-//
+
 
 import SpriteKit
 

@@ -2,9 +2,7 @@
 //  GUIBundle.swift
 //  AViSSS
 //
-//  Created by Jeff Wirsing on 11/4/14.
-//  Copyright (c) 2014 wirsing.app. All rights reserved.
-//
+
 
 import SceneKit
 

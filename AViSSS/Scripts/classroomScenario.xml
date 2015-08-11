@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Jeff Wirsing AViSSS XML -->
+<!-- AViSSS XML -->
+<!--Copyright (c) 2015 AViSSS. All rights reserved. -->
 
 <scenario>
     <environment>classroomEnvironment</environment>

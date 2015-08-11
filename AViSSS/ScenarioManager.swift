@@ -1,10 +1,9 @@
 //
 //  GameViewController.swift
 //  AViSSS
+//  Copyright (c) 2015 AViSSS. All rights reserved.
 //
-//  Created by Jeff Wirsing on 7/16/14.
-//  Copyright (c) 2014 wirsing.app. All rights reserved.
-//  GitHub Test 2
+
 
 import UIKit
 import QuartzCore
@@ -18,9 +17,7 @@ import AVFoundation
 //It first builds the menu scene, and then builds and runs scenarios.
 //It is is responsible for adding nodes to the scenes, and removing/refreshing/switching between scenes when needed.
 class ScenarioManager: UIViewController {
-    
-    var runningScene = SCNScene()
-    var menuScene = SCNScene()
+
     var targets = [String]()
     var currentSceneIsMenu: Bool = true
     var scriptManager = ScriptManager()
@@ -71,7 +68,7 @@ class ScenarioManager: UIViewController {
         ////////////Other settings....///////////////////
         
         // show statistics such as fps and timing information
-        scnView.showsStatistics = true
+        scnView.showsStatistics = false
         // configure the view
         scnView.backgroundColor = UIColor.blueColor()
         
@@ -90,8 +87,8 @@ class ScenarioManager: UIViewController {
         
         NSLog("building Menu")
         currentSceneIsMenu = true
-        menuScene = SCNScene()
-        scnView.scene = menuScene
+        scnView.scene = nil
+        scnView.scene = SCNScene()
         //        NSLog("scnView size- \(scnView.frame.size)")
         var overlay = StartMenuOverlay(size: scnView.frame.size)
         // scnView.overlaySKScene  = ScoreOverlay(size: scnView.frame.size, totalStates: statesEncountered, incorrectChoices: incorrectChoices, sm: self)
@@ -104,20 +101,35 @@ class ScenarioManager: UIViewController {
         
         NSLog("refreshingScene")
         if let _sceneName = sceneName{
-            scnView.overlaySKScene = nil
-            runningScene = SCNScene()
             
+            scnView.scene?.rootNode.enumerateChildNodesUsingBlock { (node, stop) -> Void in
+                node.removeFromParentNode()
+                node.removeAllActions()
+                node.removeAllAnimations()
+            }
+            scnView.overlaySKScene = nil
+            //save memory
+            
+
+
+            scnView.scene = nil
+            
+            
+            scnView.scene = SCNScene()
+            NSBundle.mainBundle()
+
             //Add Ambient Light
             addLights()
             
             lastState = false
-            scnView.scene = runningScene
+           
             scriptManager.runScenario(_sceneName)
             
         }else{
             //If scene name was nil, it means we finished last scenario
             //scnView.scene = nil
             _GUIManager.removeUI()
+
             
             scoreOverlay = ScoreOverlay(size: scnView.frame.size, totalStates: statesEncountered, incorrectChoices: incorrectChoices, sm: self)
             
@@ -131,21 +143,21 @@ class ScenarioManager: UIViewController {
         ambientLightNode.light = SCNLight()
         ambientLightNode.light?.type = SCNLightTypeAmbient
         ambientLightNode.light?.color = UIColor.darkGrayColor()
-        runningScene.rootNode.addChildNode(ambientLightNode)
+        scnView.scene!.rootNode.addChildNode(ambientLightNode)
         
     }
     //Expects 6 images: Right, Left, Top, Bottom, front, back
     func buildSkybox(imageNames: [String]){
-        runningScene.background.contents = imageNames
+        scnView.scene!.background.contents = imageNames
     }
     //Add prepared node to scene
     func addNode(node: SCNNode){
-        runningScene.rootNode.addChildNode(node)
+        scnView.scene!.rootNode.addChildNode(node)
     }
     //Add scnAction or animation
     func addActionsToTargets(targetActions : [String:SCNAction]){
         for (target, action) in targetActions{
-            runningScene.rootNode.childNodeWithName(target, recursively: true)?.runAction(action)
+            scnView.scene!.rootNode.childNodeWithName(target, recursively: true)?.runAction(action)
         }
     }
     func setSelectableTargets(targets:[String]){
@@ -183,11 +195,18 @@ class ScenarioManager: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        //scnView.scene = nil
+        //scnView.scene = SCNScene()
         // Release any cached data, images, etc that aren't in use.
     }
     func degToRad(deg: Float)->Float{
         return (deg * 180 / Float(M_PI))
     }
+    //Hide the status bar
     
+    override func prefersStatusBarHidden() -> Bool {
+        
+        return true;
+    }
     
 }

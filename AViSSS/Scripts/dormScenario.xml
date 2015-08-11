@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Jeff Wirsing AViSSS XML -->
+<!-- AViSSS XML -->
+<!--Copyright (c) 2015 AViSSS. All rights reserved. -->
 
 <scenario>
     <environment>dormEnvironment</environment>
@@ -89,7 +90,7 @@
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Ignore him and keep going on my way</text>
+                <text>Ignore him and keep going on your way</text>
                 <text_on_select>No, you should acknowledge your roomate when you see him or her.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
@@ -302,7 +303,7 @@
             <situation_sound>1-1a</situation_sound>
             <situation_text>Your roommate has decided to have his girlfriend over again, which is the third time this week. The dorm is small and it feels crowded and uncomfortable when she's over', so what should you do?</situation_text>
             <next_state>4</next_state>
-            <correct_choice>1</correct_choice>
+            <correct_choice>3</correct_choice>
             <option_type>text</option_type>
             <description_delay>5</description_delay>
             <options_delay>5</options_delay>
@@ -362,10 +363,10 @@
             <situation_sound>1-1a</situation_sound>
             <situation_text>You want to go to sleep but your roommate insists on staying up late so he can do his homework.</situation_text>
             <next_state>0</next_state>
-            <correct_choice>1</correct_choice>
+            <correct_choice>3</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>4</description_delay>
+            <options_delay>4</options_delay>
             
             <menu_option id="0">
                 <text>I'll turn off the roommate's lamp to force him to go to sleep.</text>

@@ -1,11 +1,9 @@
 //
 //  ScriptManager.swift
 //  AViSSS
+//  Copyright (c) 2015 AViSSS. All rights reserved.
 //
-//  Created by Jeff Wirsing on 7/22/14.
-//  Copyright (c) 2014 wirsing.app. All rights reserved.
-//
-// Justin Ehrlich colloberation
+
 
 import UIKit
 import QuartzCore
@@ -203,7 +201,7 @@ class ScriptManager {
                 }
             case "morpher":
                 //scenarioManager.scene.rootNode.childNodeWithName(name, recursively: true)?.morpher?.targets
-                NSLog("buildAction: Morpher case-\(scenarioManager!.runningScene.rootNode.childNodeWithName(name as! String, recursively: true)?.morpher?.targets )")
+                NSLog("buildAction: Morpher case-\(scenarioManager!.scnView.scene!.rootNode.childNodeWithName(name as! String, recursively: true)?.morpher?.targets )")
                 //This is how the facial morphers are used as an animation
                 var morpherNumber = ((action.elementsForName("id").first as! GDataXMLElement).stringValue() as NSString).floatValue
                 var animation = CABasicAnimation(keyPath: "morpher.weights[\(morpherNumber)]")

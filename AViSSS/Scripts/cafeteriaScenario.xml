@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Jeff Wirsing AViSSS XML -->
+<!-- AViSSS XML -->
+<!--Copyright (c) 2015 AViSSS. All rights reserved. -->
 
 <scenario>
     <environment>cafeteriaEnvironment</environment>
@@ -420,8 +421,8 @@
             <next_state>3</next_state>
             <correct_choice>1</correct_choice>
             <option_type>text</option_type>
-            <description_delay>8</description_delay>
-            <options_delay>8</options_delay>
+            <description_delay>4</description_delay>
+            <options_delay>4</options_delay>
             
             <menu_option id="0">
                 <text>I'll walk around the person and cut him.</text>
@@ -430,7 +431,7 @@
             </menu_option>
             <menu_option id="1">
                 <text>Ignore the person.</text>
-                <text_on_select>Yes, you should probably let this go, besides he might of cut not knowing you were in line,  or it's possible that the person in front of him saved a spot.</text_on_select>
+                <text_on_select>Yes, you should probably let this go, besides he might of cut not knowing you were in line,  or it's possible that the person in front of him saved him a spot.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
