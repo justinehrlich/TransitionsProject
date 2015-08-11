@@ -195,8 +195,6 @@ class ScenarioManager: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        //scnView.scene = nil
-        //scnView.scene = SCNScene()
         // Release any cached data, images, etc that aren't in use.
     }
     func degToRad(deg: Float)->Float{
