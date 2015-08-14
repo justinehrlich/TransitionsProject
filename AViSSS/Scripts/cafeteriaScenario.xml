@@ -120,15 +120,7 @@
                     </animation>
                 </actionSequence>
             </target>
-            <target name="boy3">
-                <actionSequence desc="sitIdle">
-                    <animation>
-                        <file>boy3_Animations</file>
-                        <name>sitIdle</name>
-                        <count>1000</count>
-                    </animation>
-                </actionSequence>
-            </target>
+
             <target name="woman17">
                 <actionSequence desc="idleLoop">
                     <animation>
@@ -138,10 +130,10 @@
                     </animation>
                 </actionSequence>
             </target>
-            <target name="woman17b">
+            <target name="woman16">
                 <actionSequence desc="idleLoop">
                     <animation>
-                        <file>woman17_Animations</file>
+                        <file>woman16_Animations</file>
                         <name>idleLoop</name>
                         <count>1000</count>
                     </animation>

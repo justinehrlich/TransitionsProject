@@ -165,12 +165,12 @@
 		1F869F591A16EEB0004E9369 /* 1-1a-3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "1-1a-3.mp3"; sourceTree = "<group>"; };
 		1F869F5A1A16EEB0004E9369 /* 1-1a-4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "1-1a-4.mp3"; sourceTree = "<group>"; };
 		1F869F5B1A16EEB0004E9369 /* 1-1a.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "1-1a.mp3"; sourceTree = "<group>"; };
-		1F86E7AE1977270A005ED0DD /* Transitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F86E7AE1977270A005ED0DD /* College Transitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "College Transitions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F86E7B21977270A005ED0DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F86E7B31977270A005ED0DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F86E7B51977270A005ED0DD /* ScenarioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioManager.swift; sourceTree = "<group>"; };
 		1F86E7BA1977270A005ED0DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1F86E7C01977270A005ED0DD /* TransitionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F86E7C01977270A005ED0DD /* College TransitionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "College TransitionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAD65C91B0D89290032B6AD /* StartMenuOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartMenuOverlay.swift; sourceTree = "<group>"; };
 		1FAFABB11B2E2AB90067503D /* boy4_Animations.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boy4_Animations.dae; sourceTree = "<group>"; };
 		1FBDB0CA1B39E4ED003DFE77 /* ScoreOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreOverlay.swift; sourceTree = "<group>"; };
@@ -378,7 +378,7 @@
 		1F86E7A519772709005ED0DD = {
 			isa = PBXGroup;
 			children = (
-				1F86E7B01977270A005ED0DD /* AViSSS */,
+				1F86E7B01977270A005ED0DD /* College-Transitions */,
 				1F86E7AF1977270A005ED0DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -386,13 +386,13 @@
 		1F86E7AF1977270A005ED0DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1F86E7AE1977270A005ED0DD /* Transitions.app */,
-				1F86E7C01977270A005ED0DD /* TransitionsTests.xctest */,
+				1F86E7AE1977270A005ED0DD /* College Transitions.app */,
+				1F86E7C01977270A005ED0DD /* College TransitionsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1F86E7B01977270A005ED0DD /* AViSSS */ = {
+		1F86E7B01977270A005ED0DD /* College-Transitions */ = {
 			isa = PBXGroup;
 			children = (
 				1F86E7B31977270A005ED0DD /* AppDelegate.swift */,
@@ -409,6 +409,7 @@
 				1FCF20E6197EC2D300A2AB99 /* GUIManager.swift */,
 				C87C3CC31B792F5C0075307E /* Main.storyboard */,
 			);
+			name = "College-Transitions";
 			path = AViSSS;
 			sourceTree = "<group>";
 		};
@@ -503,9 +504,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1F86E7AD1977270A005ED0DD /* Transitions */ = {
+		1F86E7AD1977270A005ED0DD /* College Transitions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F86E7CA1977270A005ED0DD /* Build configuration list for PBXNativeTarget "Transitions" */;
+			buildConfigurationList = 1F86E7CA1977270A005ED0DD /* Build configuration list for PBXNativeTarget "College Transitions" */;
 			buildPhases = (
 				1F86E7AA1977270A005ED0DD /* Sources */,
 				1F86E7AB1977270A005ED0DD /* Frameworks */,
@@ -515,14 +516,14 @@
 			);
 			dependencies = (
 			);
-			name = Transitions;
+			name = "College Transitions";
 			productName = AViSSS;
-			productReference = 1F86E7AE1977270A005ED0DD /* Transitions.app */;
+			productReference = 1F86E7AE1977270A005ED0DD /* College Transitions.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1F86E7BF1977270A005ED0DD /* TransitionsTests */ = {
+		1F86E7BF1977270A005ED0DD /* College TransitionsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F86E7CD1977270A005ED0DD /* Build configuration list for PBXNativeTarget "TransitionsTests" */;
+			buildConfigurationList = 1F86E7CD1977270A005ED0DD /* Build configuration list for PBXNativeTarget "College TransitionsTests" */;
 			buildPhases = (
 				1F86E7BC1977270A005ED0DD /* Sources */,
 				1F86E7BD1977270A005ED0DD /* Frameworks */,
@@ -533,9 +534,9 @@
 			dependencies = (
 				1F86E7C21977270A005ED0DD /* PBXTargetDependency */,
 			);
-			name = TransitionsTests;
+			name = "College TransitionsTests";
 			productName = AViSSSTests;
-			productReference = 1F86E7C01977270A005ED0DD /* TransitionsTests.xctest */;
+			productReference = 1F86E7C01977270A005ED0DD /* College TransitionsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -557,7 +558,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1F86E7A919772709005ED0DD /* Build configuration list for PBXProject "Transitions" */;
+			buildConfigurationList = 1F86E7A919772709005ED0DD /* Build configuration list for PBXProject "College Transitions" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -570,8 +571,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F86E7AD1977270A005ED0DD /* Transitions */,
-				1F86E7BF1977270A005ED0DD /* TransitionsTests */,
+				1F86E7AD1977270A005ED0DD /* College Transitions */,
+				1F86E7BF1977270A005ED0DD /* College TransitionsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -729,7 +730,7 @@
 /* Begin PBXTargetDependency section */
 		1F86E7C21977270A005ED0DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1F86E7AD1977270A005ED0DD /* Transitions */;
+			target = 1F86E7AD1977270A005ED0DD /* College Transitions */;
 			targetProxy = 1F86E7C11977270A005ED0DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -836,7 +837,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-lxml2";
-				PRODUCT_NAME = Transitions;
+				PRODUCT_NAME = "College Transitions";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "XMLSupport/AViSSS-Bridging-Header.h";
@@ -863,7 +864,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-lxml2";
-				PRODUCT_NAME = Transitions;
+				PRODUCT_NAME = "College Transitions";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "XMLSupport/AViSSS-Bridging-Header.h";
@@ -886,7 +887,7 @@
 				INFOPLIST_FILE = AViSSSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TransitionsTests;
+				PRODUCT_NAME = "College TransitionsTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -902,7 +903,7 @@
 				INFOPLIST_FILE = AViSSSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TransitionsTests;
+				PRODUCT_NAME = "College TransitionsTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -910,7 +911,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F86E7A919772709005ED0DD /* Build configuration list for PBXProject "Transitions" */ = {
+		1F86E7A919772709005ED0DD /* Build configuration list for PBXProject "College Transitions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F86E7C81977270A005ED0DD /* Debug */,
@@ -919,7 +920,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F86E7CA1977270A005ED0DD /* Build configuration list for PBXNativeTarget "Transitions" */ = {
+		1F86E7CA1977270A005ED0DD /* Build configuration list for PBXNativeTarget "College Transitions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F86E7CB1977270A005ED0DD /* Debug */,
@@ -928,7 +929,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F86E7CD1977270A005ED0DD /* Build configuration list for PBXNativeTarget "TransitionsTests" */ = {
+		1F86E7CD1977270A005ED0DD /* Build configuration list for PBXNativeTarget "College TransitionsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F86E7CE1977270A005ED0DD /* Debug */,

@@ -102,19 +102,15 @@ class ScenarioManager: UIViewController {
         NSLog("refreshingScene")
         if let _sceneName = sceneName{
             
+            /*
             scnView.scene?.rootNode.enumerateChildNodesUsingBlock { (node, stop) -> Void in
                 node.removeFromParentNode()
                 node.removeAllActions()
                 node.removeAllAnimations()
-            }
+            }*/
             scnView.overlaySKScene = nil
-            //save memory
             
-
-
             scnView.scene = nil
-            
-            
             scnView.scene = SCNScene()
             NSBundle.mainBundle()
 
