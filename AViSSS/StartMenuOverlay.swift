@@ -89,7 +89,7 @@ class StartMenuOverlay: SKScene{
     func setTheScenarioManager(sm: ScenarioManager){
         scenarioManager = sm
     }
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         NSLog("Start Menu Touched!")
         let touchLocation = (touches as! Set<UITouch>).first!.locationInNode(self)
         var index = 0

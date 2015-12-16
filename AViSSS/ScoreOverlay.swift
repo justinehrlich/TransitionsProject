@@ -55,7 +55,7 @@ class ScoreOverlay: SKScene{
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
         let touchLocation = (touches as! Set<UITouch>).first!.locationInNode(self)
         

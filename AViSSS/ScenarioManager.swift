@@ -79,7 +79,7 @@ class ScenarioManager: UIViewController {
         if let existingGestureRecognizers = scnView.gestureRecognizers {
             gestureRecognizers.addObjectsFromArray(existingGestureRecognizers)
         }
-        scnView.gestureRecognizers = gestureRecognizers as [AnyObject]
+        scnView.gestureRecognizers = gestureRecognizers as [AnyObject] as! [UIGestureRecognizer]
     }
     func buildMenuScene(){
         statesEncountered = 0
@@ -166,7 +166,8 @@ class ScenarioManager: UIViewController {
         
         // check what nodes are tapped
         let p = gestureRecognize.locationInView(scnView)
-        if let hitResults = scnView.hitTest(p, options: nil) {
+        scnView.hitTest(p, options: nil);
+        let hitResults = scnView.hitTest(p, options: nil)
             // check that we clicked on at least one object
             if hitResults.count > 0 {
                 // retrieved the first clicked object
@@ -174,20 +175,14 @@ class ScenarioManager: UIViewController {
                 
             }
             
-        }
+        
     }
     
     override func shouldAutorotate() -> Bool {
         return true
     }
-    
-    override func supportedInterfaceOrientations() -> Int {
-        if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-            return Int(UIInterfaceOrientationMask.AllButUpsideDown.rawValue)
-        } else {
-            return Int(UIInterfaceOrientationMask.All.rawValue)
-        }
-    }
+
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -191,7 +191,7 @@ class GUIManager : NSObject, AVSpeechSynthesizerDelegate, AVAudioPlayerDelegate,
                 self._usedLabelNodeArray = [UILabel]()
                 
                 
-                for (index,option) in enumerate(self._GUIBundle.optionsText){
+                for (index,option) in self._GUIBundle.optionsText.enumerate(){
                     if option != "" {
                         //self.usedLabelNodeArray.append(self.labelNodeArray[index])
                         //self.createMultilineLabel(option, size: CGSizeMake(300, 50), baseNode: &self.labelNodeArray[index])
@@ -269,7 +269,7 @@ class GUIManager : NSObject, AVSpeechSynthesizerDelegate, AVAudioPlayerDelegate,
             
             
             //Ask scriptManager to parse the actions we recieved earlier
-            if let actions = _GUIBundle.actionsOnSelect[safe: choice]{
+            if let actions = _GUIBundle.actionsOnSelect[choice]{
                 scriptManager?.parseActions(_GUIBundle.actionsOnSelect[choice]!)
             }
             //Play audio-  Then, depending on if the answer was correct or not, either re-present choices without selected choice-  or tell state machine to send us to the next state
@@ -314,7 +314,7 @@ class GUIManager : NSObject, AVSpeechSynthesizerDelegate, AVAudioPlayerDelegate,
             descriptionAudioPlayer = nil
             let responseSoundLocation = NSURL(fileURLWithPath: soundPath as! String)
             //NSLog("response sound location\(responseSoundLocation)")
-            descriptionAudioPlayer = AVAudioPlayer(contentsOfURL: responseSoundLocation, error: nil)
+            try! descriptionAudioPlayer = AVAudioPlayer(contentsOfURL: responseSoundLocation, fileTypeHint: nil)
             descriptionAudioPlayer?.delegate = self
             // NSLog("audioPlayer \(descriptionAudioPlayer)")
             descriptionAudioPlayer!.play()
@@ -373,7 +373,8 @@ class GUIManager : NSObject, AVSpeechSynthesizerDelegate, AVAudioPlayerDelegate,
                 _audioHasBeenPlayed = false
                 if scenarioManager!.lastState == true{
                     var nextIndex = ++scenarioManager!.currentScenarioIndex
-                    scenarioManager!.refreshRunningScene(scenarioManager!.scenarioNames[safe: nextIndex])
+                    let scenarioName = scenarioManager?.scenarioNames[nextIndex-1]
+                    scenarioManager!.refreshRunningScene(scenarioName)
                 }else{
                     scriptManager!.goToState(_GUIBundle.nextState)
                 }

@@ -192,12 +192,12 @@ class ScriptManager {
                 var sceneAnimationSource = SCNSceneSource(URL: sceneAnimationURL!, options: nil)
                 //let animationName = "\(sceneAnimationSourceName)-1"
                 let animationName = (action.elementsForName("name").first as! GDataXMLElement).stringValue() as String
-                var animation = sceneAnimationSource?.entryWithIdentifier(animationName, withClass: CAAnimation.self) as! CAAnimation
+                var animation = sceneAnimationSource?.entryWithIdentifier(animationName, withClass: CAAnimation.self)
                 let count = ((action.elementsForName("count").first as! GDataXMLElement).stringValue() as NSString).floatValue
-                animation.repeatCount = count
+                animation!.repeatCount = count
                 buildAction = SCNAction.runBlock{
                     (node: SCNNode!) in
-                    node.addAnimation(animation, forKey: animationName)
+                    node.addAnimation(animation!, forKey: animationName)
                 }
             case "morpher":
                 //scenarioManager.scene.rootNode.childNodeWithName(name, recursively: true)?.morpher?.targets
@@ -257,7 +257,11 @@ class ScriptManager {
         let xmlData = NSData(contentsOfFile: xmlLocation!)
         var error: NSError?
         
-        let xmlDocument = GDataXMLDocument(data: xmlData, options: 0, error: &error )
+        let xmlDocument = try! GDataXMLDocument(data: xmlData, options: 0)
+        
+        
+        
+        
         return xmlDocument
     }
     
@@ -281,17 +285,17 @@ class ScriptManager {
             
             //May be a single object, defined by a name-  or "all", where we load all objects in dae
             if objectName == "all"{
-                var nodeList = sceneSource?.identifiersOfEntriesWithClass(SCNNode.self) as! [String]
+                var nodeList = (sceneSource?.identifiersOfEntriesWithClass(SCNNode.self))! as [String]
                 NSLog("Nodes in .dae \(nodeList)")
                 
                 for nodeName in nodeList{
-                    scnNode.addChildNode(sceneSource?.entryWithIdentifier(nodeName, withClass: SCNNode.self) as! SCNNode)
+                    scnNode.addChildNode((sceneSource?.entryWithIdentifier(nodeName, withClass: SCNNode.self))! as SCNNode)
                 }
             }else{
                 
                 
             //Get Node containing information about the character/object mesh
-                scnNode = sceneSource?.entryWithIdentifier(objectName, withClass: SCNNode.self) as! SCNNode
+                scnNode = (sceneSource?.entryWithIdentifier(objectName, withClass: SCNNode.self))! as SCNNode
             }
             
             
@@ -391,7 +395,7 @@ class ScriptManager {
         //Situation text
         guiBundle.situationText = (xmlBundle.elementsForName("situation_text")?.first as! GDataXMLElement).stringValue()
         //Next State
-        guiBundle.nextState = (xmlBundle.elementsForName("next_state")?.first as! GDataXMLElement).stringValue().toInt()!
+        guiBundle.nextState = Int((xmlBundle.elementsForName("next_state")?.first as! GDataXMLElement).stringValue())!
         //description delay
         guiBundle.descriptionDelay = ((xmlBundle.elementsForName("description_delay")?.first as! GDataXMLElement).stringValue() as NSString).doubleValue
         //options delay
@@ -400,11 +404,11 @@ class ScriptManager {
         guiBundle.object = (xmlBundle.elementsForName("option_type")?.first as! GDataXMLElement).stringValue() == "object" ? true : false
         
         //Set Correct Choice
-        guiBundle.correctChoiceID = (xmlBundle.elementsForName("correct_choice")?.first as! GDataXMLElement).stringValue().toInt()!
+        guiBundle.correctChoiceID = Int((xmlBundle.elementsForName("correct_choice")?.first as! GDataXMLElement).stringValue())!
         //Menu choices   text/text-on-select/sound-on-swift select/actions-on-select
         for menuOption:GDataXMLElement in xmlBundle.elementsForName("menu_option") as! [GDataXMLElement]{
             //
-            let index = menuOption.attributeForName("id").stringValue().toInt()
+            let index = Int(menuOption.attributeForName("id").stringValue())
             guiBundle.optionsText[index!] = (menuOption.elementsForName("text")?.first as! GDataXMLElement).stringValue()
             guiBundle.textOnSelect[index!] = (menuOption.elementsForName("text_on_select")?.first as! GDataXMLElement).stringValue()
             guiBundle.soundOnSelect[index!] = (menuOption.elementsForName("sound_on_select")?.first as! GDataXMLElement).stringValue()
