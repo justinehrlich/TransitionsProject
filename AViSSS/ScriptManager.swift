@@ -174,7 +174,7 @@ class ScriptManager {
                 let x = ((action.elementsForName("x").first as! GDataXMLElement).stringValue() as NSString).floatValue
                 let y = ((action.elementsForName("y").first as! GDataXMLElement).stringValue() as NSString).floatValue
                 let z = ((action.elementsForName("z").first as! GDataXMLElement).stringValue() as NSString).floatValue
-                let angle = ((action.elementsForName("angle").first as! GDataXMLElement).stringValue() as NSString).floatValue
+                let angle = -((action.elementsForName("angle").first as! GDataXMLElement).stringValue() as NSString).floatValue
                 let duration =  ((action.elementsForName("duration").first as! GDataXMLElement).stringValue() as NSString).doubleValue
                 //  let count = ((action.elementsForName("count").first as! GDataXMLElement).stringValue() as NSString).integerValue
                 // buildAction = SCNAction.repeatAction(SCNAction.rotateByAngle(CGFloat(degToRad(angle)), aroundAxis: SCNVector3Make(x, y,z), duration: NSTimeInterval(duration)), count: count)
@@ -340,7 +340,8 @@ class ScriptManager {
             
         }else if node.attributeForName("type").stringValue() == "camera"{
             scnNode.camera = SCNCamera()
-            scnNode.camera?.automaticallyAdjustsZRange = true
+            scnNode.camera?.automaticallyAdjustsZRange = false
+            scnNode.camera?.zFar = 1000
             scnNode.name = "camera"
             
             

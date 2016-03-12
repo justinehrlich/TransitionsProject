@@ -24,7 +24,7 @@ class ScenarioManager: UIViewController {
     var _GUIManager = GUIManager()
     var castShadows = false
     
-    var scnView : SCNView = SCNView()
+    var scnView : SCNView = SCNView(frame: UIScreen.mainScreen().bounds)
     var statesEncountered = 0
     var incorrectChoices = 0
     var lastState = false
@@ -95,7 +95,7 @@ class ScenarioManager: UIViewController {
         overlay.setTheScenarioManager(self)
         scnView.overlaySKScene = overlay
         
-        NSLog("Test")
+        NSLog("finished building menu scene")
     }
     func refreshRunningScene(sceneName: String?){
         

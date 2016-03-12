@@ -572,6 +572,7 @@
 		1F86E7A619772709005ED0DD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = wirsing.app;
 				TargetAttributes = {

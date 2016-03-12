@@ -323,7 +323,7 @@ class GUIManager : NSObject, AVSpeechSynthesizerDelegate, AVAudioPlayerDelegate,
     }
     
     //Stops previous speech synth and begins speaking new text.  Speech rate can optionally be set
-    func startSpeechSynthesizer(text :String, speechRate: Float = 0.08){
+    func startSpeechSynthesizer(text :String, speechRate: Float = 0.5){
         NSLog("Start Speech Synth")
         speechSynth.stopSpeakingAtBoundary(AVSpeechBoundary.Immediate)
         var words = AVSpeechUtterance(string: text)
@@ -373,8 +373,8 @@ class GUIManager : NSObject, AVSpeechSynthesizerDelegate, AVAudioPlayerDelegate,
                 _audioHasBeenPlayed = false
                 if scenarioManager!.lastState == true{
                     var nextIndex = ++scenarioManager!.currentScenarioIndex
-                    let scenarioName = scenarioManager?.scenarioNames[nextIndex-1]
-                    scenarioManager!.refreshRunningScene(scenarioName)
+
+                    scenarioManager!.refreshRunningScene(scenarioManager?.scenarioNames[nextIndex])
                 }else{
                     scriptManager!.goToState(_GUIBundle.nextState)
                 }
